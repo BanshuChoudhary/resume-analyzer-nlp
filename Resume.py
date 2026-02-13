@@ -12,9 +12,20 @@ import pdfplumber
 
 import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# ---- NLTK Downloads for Streamlit Cloud ----
+resources = [
+    'punkt',
+    'punkt_tab',
+    'stopwords',
+    'wordnet',
+    'omw-1.4'
+]
+
+for resource in resources:
+    try:
+        nltk.download(resource)
+    except:
+        pass
 
 
 st.set_page_config(page_title="Resume-Analyzer",
