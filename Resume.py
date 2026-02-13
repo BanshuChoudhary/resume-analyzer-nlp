@@ -10,6 +10,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import wordnet
 import pdfplumber
 
+import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
+
 st.set_page_config(page_title="Resume-Analyzer",
                    page_icon="📄",
                    layout="centered"
