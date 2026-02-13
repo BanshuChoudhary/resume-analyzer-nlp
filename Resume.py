@@ -18,7 +18,8 @@ resources = [
     'punkt_tab',
     'stopwords',
     'wordnet',
-    'omw-1.4'
+    'omw-1.4',
+    'averaged_perceptron_tagger'
 ]
 
 for resource in resources:
